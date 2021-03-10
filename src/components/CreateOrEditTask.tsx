@@ -15,7 +15,16 @@ function CreateOrEditTask({
   editTask,
   createTask,
   id,
-}: any) {
+}: {
+  editMode: boolean,
+  title: string,
+  description: string,
+  setTitle: Function,
+  setDescription: Function,
+  editTask: Function,
+  createTask: Function,
+  id: string,
+}) {
   return (
     <div
       style={{
